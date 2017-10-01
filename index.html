@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Liljojen Pirkkala</title>
+    <style>
+        header, nav, section, article, footer {
+            display: block;
+        }
+
+        header, nav {
+            border-bottom: 1px dotted #000;
+            clear: both;
+            width: 100%;
+        }
+
+           
+        section#headline {
+            clear: both;
+            border: 5px solid #000;
+            padding: 1%;
+            width: 97%;
+        }
+
+        section#Kotikuntamme {
+            margin: 0 120px;
+            padding: 1%;
+            text-align:left;
+            font-size:larger
+        }
+                                    
+        section#Tieto, section#Kuvia {
+            float: left;
+            margin: 0 0px;
+            padding: 2%;
+            width: 46%;
+            font-size: larger
+        }
+
+
+      /* Comntainer */
+
+      .container {
+            position: relative;
+            width: 100%;
+        }
+
+        .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+
+        .middle {
+            transition: .6s ease;
+            opacity: 0;
+            position: absolute;
+            transform: translate(0%, -100%);
+            -ms-transform: translate(0%, -100%)
+        }
+
+        .container:hover .image {
+            opacity: 0.1;
+        }
+
+        .container:hover .middle {
+            opacity: 1;
+        }
+
+        .text {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 20px;
+            padding: 16px 32px;
+                     
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <hgroup>
+            <h1>Liljojen Pirkkala</h1>
+        </hgroup>
+    </header>
+   
+        <section id="Kotikuntamme">
+        <h2>Kotikuntamme meidän silmin!</h2>
+            <p>
+                Muutimme Pirkkalaan 2003. Nuorin lapsemme kastetilaisuus oli kuukauden muuton jälkeen. Rivitaloyhtiö johon muutime oli lapsien kannalta hyvä, koska keskellä yhtiötä oli suuri leikkipiha.
+                Tarhan lapset saivat käydä lähellä kotia ja onneksi he pääsivät Pirkkalan luhtarölleihin. 
+            <a href="http://www.pirkkala.fi/palvelut/varhaiskasvatus/kunnallinen-varhaiskasvatus/luontoryhmat/" target="_blank">Luhtraröllit</a> on ryhmä, jossa tutustutaan luontoo. 
+            Samassa rakannuksessa lapset kävivät esikoulun ja kaksi ensimäistä kouluvuotta.
+                Kolmanen vuoden vanhempi kävi naistenmatkan ala-asteella ja nuorempi Nuolialan ala-asteella.</p>
+            <p>Pirkkala palvelut ovat meidän kohdalta olleet ja ovat hyvät. Hyvin on toiminut lasten koulut ja koko perheen terveyden huolto.</p>
+            <p> Parasta Pirkkalassa on kuitenkin liikunta palvelut todellakin hyvät lemkeilymahdollisuudet, kuntolaitepisteet, jalkapallokentät ja liikuntatalo nykyisin vapaa-ajantalo.</p>
+
+            
+        </section>
+
+        <section id="Tieto">
+             <article>
+                <!-- (1/2) -->
+                <header>
+                    <h2>Tietoa Pirkkalasta</h2>
+                    <p>15.9.2017</p>
+                </header>
+                <p>
+                    Pirkkala (1922–1938 Etelä-Pirkkala, ruots. Birkala) on noin 19 200 asukkaan kunta Pirkanmaalla.
+                    Tampereen kaupungin kyljessä sijaitsevana se on viime vuosikymmeninä muuttunut entistä paljon kaupunkimaisemmaksi,
+                    vaikkei olekaan ottanut virallisesti käyttöön kaupunkinimitystä. Pirkkala on ollut 2000-luvun alussa Pirkanmaan väestöltään nopeimmin kasvava kunta.
+                    Pirkkalassa sijaitsevat Tampere-Pirkkalan lentoasema ja Satakunnan lennoston päätukikohta. Pirkkalan naapurikunnat ovat Tampereen ja Nokian kaupungit sekä Lempäälän ja Vesilahden kunnat <small>(lähde: https://fi.wikipedia.org/wiki/Pirkkala)</small>.
+                </p>
+                <p>Pirkkala on vanha emäpitäjä, jolla on arvokas historia.  Kunnassa on tehty runsaasti muinaislöytöjä kivi- ja rautakaudelta. Kiinteää maanviljelykseen perustuvaa asutusta on ollut 
+                    viimeistään 300–400 -luvuilla. Ensimmäiset kirjalliset tiedot Pirkkalasta löytyvät 1300-luvulta.
+                        
+                     Pirkkalan emäpitäjään kuului varhaisella keskiajalla noin puolet nykyisestä Pirkanmaasta, mutta vuosien mittaan pitäjästä irtautui useita kuntia. Vuonna 1922 jäljellä olleesta 
+                     pitäjästä muodostettiin Etelä- ja Pohjois-Pirkkalan kunnat, ja vuoden 1938 alussa Etelä-Pirkkala otti käyttöönsä historiallisen Pirkkala-nimen. Nykyinen Pirkkala on vanhan 
+                     Suur-Pirkkalan ydinaluetta <small>(lähde:http://www.pirkkala.fi/kuntainfo/historia/)</small>.</p>
+             </article>
+             <article>
+                <p> </p>
+                <h2>Video Vähäjärven rannalta</h2>
+                     <video width="100%" controls>
+                        <source src="./video/vahajarvi.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                      </video>
+            </article>
+        </section>
+        <section id="Kuvia">
+            <article>
+                <!-- (2/2) -->
+                <header>
+                    <h2>Kuvia Pirkkalasta</h2>
+                    <p>15.9.2017</p>
+                </header>
+                <table style="width:100%">
+                    <tr>
+                        <th style="width:50%">
+                            
+                                <div class="container">
+                                    <img src="./kuvat/2015-11-24 21.23.44.jpg" alt="" class="image" ; />
+                                    <div class="middle">
+                                        <div class="text">Vähäjärvi talvella 2015</div>
+                                    </div>
+                                </div>
+                           
+                        </th>
+                        <th style="width:50%">
+                           
+                                <div class="container">
+                                    <img src="./kuvat/20160716_054037.jpg" alt="" class="image" ; />
+                                    <div class="middle">
+                                        <div class="text">Rusakko Kurikassa</div>
+                                    </div>
+                                </div>
+                            
+                            </th>
+                    </tr>
+                    <tr>
+                        <th style="width:50%">
+                            
+                                <div class="container">
+                                    <img src="./kuvat/20160823_104507.jpg" alt="" class="image"; />
+                                    <div class="middle">
+                                        <div class="text">Hanhiperhe</div>
+                                    </div>
+                                </div>
+                           
+                        </th>
+                        <th style="width:50%">
+                           
+                                <div class="container">
+                                    <img src="./kuvat/20160914_101643.jpg" alt="" class="image"; />
+                                    <div class="middle">
+                                        <div class="text">Vähäjärvi syksyllä 2016</div>
+                                    </div>
+                                </div>
+                            
+                        </th>
+                    </tr>
+                     <tr>
+                        <th style="width:50%">
+                                <div class="container">
+                                <img src="./kuvat/20160928_102650.jpg" alt="" class="image"; />
+                                <div class="middle">
+                                        <div class="text">Linnut lauttalla 2016</div>
+                                    </div>
+                                </div>
+                            
+                        </th>
+                       <th style="width:50%">
+                            <div class="container">
+                                <img src="./kuvat/20170412_181036.jpg" alt="" class="image"; />
+                                <div class="middle">
+                                        <div class="text">Vähäjärvi keväällä 2017</div>
+                                    </div>
+                                </div>
+                            
+                        </th>
+                    </tr>
+                    <tr>
+                        <th style="width:50%">
+                                <div class="container">
+                                <img src="./kuvat/20170412_181045.jpg" alt="" class="image"; />
+                                <div class="middle">
+                                        <div class="text">Auringon lasku</div>
+                                    </div>
+                                </div>
+                        </th>
+                        <th style="width:50%">
+                                <div class="container">
+                                <img src="./kuvat/20170413_182357.jpg" alt="" class="image"; />
+                                <div class="middle">
+                                        <div class="text">Joutsen pariskunta 2017</div>
+                                    </div>
+                                </div>
+                        </th>
+                    </tr>
+                </table>
+            </article>
+        </section>
+        <footer>
+            <small><center>Pirkkala 28.9.2017 Lilja</center></small>
+        </footer>
+</body>
+</html>
