@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "stylesheet" type = "text/css" href = "CSS.css" />
+</head>
+<body>
+    <header>
+        <h1>Kuvia Pirkkalasta</h1>
+    </header>
+
+        <header>
+            <div class="ylapaneli">
+                <a href="../HTML/index.html">Home</a>
+                <a class="active" href="#Diashow">Diashow (JS)</a>
+                <a href="#contact"></a>
+                <a href="#about"></a>
+            </div>
+        </header>
+        <br>
+        <p>Paina kuvassa olevia nuolinäppäimiä</p>
+        <div class="diashow-container">
+
+            <div class="kuvat fade">
+                <div class="numeroteksti">1 / 8</div>
+                <img src="../HTML/kuvat/2015-11-24 21.23.44.jpg" style="width:100%">
+                <div class="teksti">Vähäjärvi talvella 2015</div>
+            </div>
+
+            <div class="kuvat fade">
+                <div class="numeroteksti">2 / 8</div>
+                <img src="../HTML/kuvat/20160716_054037.jpg" style="width:100%">
+                <div class="teksti">Rusakko Kurikassa</div>
+            </div>
+
+            <div class="kuvat fade">
+                <div class="numeroteksti">3 / 8</div>
+                <img src="../HTML/kuvat/20160823_104507.jpg" style="width:100%">
+                <div class="teksti">Hanhiperhe</div>
+            </div>
+
+            <div class="kuvat fade">
+                <div class="numeroteksti">4 / 8</div>
+                <img src="../HTML/kuvat/20160914_101643.jpg" style="width:100%">
+                <div class="teksti">Vähäjärvi syksyllä 2016</div>
+            </div>
+
+            <div class="kuvat fade">
+                <div class="numeroteksti">5 / 8</div>
+                <img src="../HTML/kuvat/20160928_102650.jpg" style="width:100%">
+                <div class="teksti">Linnut lauttalla 2016</div>
+            </div>
+
+            <div class="kuvat fade">
+                <div class="numeroteksti">6 / 8</div>
+                <img src="../HTML/kuvat/20170412_181036.jpg" style="width:100%">
+                <div class="teksti">Vähäjärvi keväällä 2017</div>
+            </div>
+
+            <div class="kuvat fade">
+                <div class="numeroteksti">7 / 8</div>
+                <img src="../HTML/kuvat/20170412_181045.jpg" style="width:100%">
+                <div class="teksti">Auringon lasku</div>
+            </div>
+
+            <div class="kuvat fade">
+                <div class="numeroteksti">8 / 8</div>
+                <img src="../HTML/kuvat/20170413_182357.jpg" style="width:100%">
+                <div class="teksti">Joutsen pariskunta 2017</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="nykyinenDia(1)"></span>
+            <span class="dot" onclick="nykyinenDia(2)"></span>
+            <span class="dot" onclick="nykyinenDia(3)"></span>
+            <span class="dot" onclick="nykyinenDia(4)"></span>
+            <span class="dot" onclick="nykyinenDia(5)"></span>
+            <span class="dot" onclick="nykyinenDia(6)"></span>
+            <span class="dot" onclick="nykyinenDia(7)"></span>
+            <span class="dot" onclick="nykyinenDia(8)"></span>
+        </div>
+
+        <script src="kuvashow.js"></script>
+
+</body>
+</html> 
